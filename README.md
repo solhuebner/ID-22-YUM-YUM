@@ -1,2 +1,2 @@
-# ID-00-template
+# YUM YUM
 Code for the game "template" for Arduboy
