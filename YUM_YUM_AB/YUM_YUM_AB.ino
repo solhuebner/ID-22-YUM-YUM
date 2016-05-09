@@ -1,18 +1,18 @@
 /*
-  GAME NAME: http://www.team-arg.org/dummy-manual.html
+  YUM YUM: http://www.team-arg.org/yum-manual.html
 
-  Arduboy version 0.1:  http://www.team-arg.org/dummy-downloads.html
+  Arduboy version 0.1:  http://www.team-arg.org/yum-downloads.html
 
   MADE by TEAM a.r.g. : http://www.team-arg.org/more-about.html
 
-  2016 - JO3RI
+  2016 - JO3RI - STG
 
   License: MIT : https://opensource.org/licenses/MIT
 
 */
 
 //determine the game
-#define GAME_ID 00
+#define GAME_ID 22
 
 #include "Arglib.h"
 #include "globals.h"
