@@ -7,30 +7,21 @@
 
 void checkInputs()
 {
-  player.walking = false;
-  if (buttons.pressed(DOWN_BUTTON) && (player.y < GAME_BOTTOM))
+  if (buttons.pressed(DOWN_BUTTON))
   {
-    player.direction = FACING_SOUTH;
-    player.y++;
-    player.walking = true;
+
   }
-  if (buttons.pressed(LEFT_BUTTON) && (player.x > GAME_LEFT))
+  if (buttons.pressed(LEFT_BUTTON))
   {
-    player.direction = FACING_WEST;
-    player.x--;
-    player.walking = true;
+
   }
-  if (buttons.pressed(UP_BUTTON) && (player.y > GAME_TOP))
+  if (buttons.pressed(UP_BUTTON))
   {
-    player.direction = FACING_NORTH;
-    player.y--;
-    player.walking = true;
+
   }
-  if (buttons.pressed(RIGHT_BUTTON) && (player.x < GAME_RIGHT))
+  if (buttons.pressed(RIGHT_BUTTON))
   {
-    player.direction = FACING_EAST;
-    player.x++;
-    player.walking = true;
+
   }
 
   if (buttons.justPressed(A_BUTTON)) gameState = STATE_GAME_PAUSE;
