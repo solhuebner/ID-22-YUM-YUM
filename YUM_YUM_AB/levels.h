@@ -11,7 +11,13 @@
 void drawMap()
 {
   // FLOOR TILE
-  sprites.drawPlusMask(0, 0, wallTiles_plus_mask, 0);
+  for (byte y = 0; y < 9; y++)
+  {
+    for (byte x = 0; x < 10; x++)
+    {
+      sprites.drawPlusMask((x * 16)-(y*4) -4 , (y *8) - 8, wallTiles_plus_mask, pgm_read_byte(&tilemap00[x + (10*y)]));
+    }
+  }
 }
 
 #endif
